@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Styles/styles.css" />
+    <title>Mortgage Loan Calculator</title>
+  </head>
+  <body>
+    <header>
+      <div class="brand-wrapper">
+        <div class="brand-logo">Mortgage calculator logo</div>
+      </div>
+      <hr />
+      <div class="container">
+        <nav class="nav-wrapper">
+          <ul>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+            <li><a href="#">Link 4</a></li>
+          </ul>
+        </nav>
+        <hr />
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <img src="/Images/Mortgage_BG.svg" class="bg-img" alt="" />
+        <div class="hero-wrapper">
+          <h1 class="title">Mortgage Calculator</h1>
+          <p class="hero-text">
+            Use this Mortgage Calculator to estimate your monthly mortgage
+            payments. You can input a different home price,
+            <a href="#">down payment</a>, loan length and
+            <a href="#">interest rate</a> to see how your monthly payments
+            change.
+          </p>
+          <p class="hero-sub-text">
+            The monthly payment estimates are broken down by
+            <a href="#">principal</a>, interest, property taxes and
+            <a href="#">homeowner's insurance</a>. We take our calculator a step
+            further by factoring in your <a href="#">credit score range</a>, ZIP
+            code and HOA fees to give you a more precise payment estimate.
+            You’ll also go into the <a href="#">homebuying process</a> with a
+            more accurate picture of how to calculate mortgage payments and
+            purchase with confidence. After you run some estimates, read on for
+            more education and homebuying tips.
+          </p>
+        </div>
+      </section>
+      <section class="calc-content-section">
+        <div class="left-column">
+          <div class="form">
+            <div class="form-field">
+              <label for="home-price">Home Price</label>
+              <div class="input-overlay-left home-price">
+                <div class="input-overlay-text_left">$</div>
+                <input
+                  type="tel"
+                  id="home-price"
+                  autocomplete="off"
+                  placeholder="100,000"
+                  required
+                />
+              </div>
+            </div>
+            <div class="form-field">
+              <label for="down-payment">Down Payment</label>
+              <div class="input-overlay-left down-payment">
+                <div class="input-overlay-text_left">$</div>
+                <input
+                  type="tel"
+                  id="down-payment"
+                  autocomplete="off"
+                  placeholder="10,000"
+                  required
+                />
+              </div>
+              <div class="input-overlay-right down-percent">
+                <input
+                  type="tel"
+                  id="down-percent"
+                  autocomplete="off"
+                  placeholder="20"
+                  required
+                />
+                <div class="input-overlay-text_right">%</div>
+              </div>
+            </div>
+            <div class="form-field">
+              <label for="loan-length">Loan Length</label>
+              <select id="loan-length">
+                <option value="Fixed30Year">30-year fixed</option>
+                <option value="Fixed15Year">15-year fixed</option>
+                <option value="ARM5">5/1 ARM</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label for="interest-rate">Interest Rate</label>
+              <div class="input-overlay-right interest-rate">
+                <input
+                  type="number"
+                  id="interest-rate"
+                  autocomplete="off"
+                  placeholder="3.106"
+                  required
+                />
+                <div class="input-overlay-text_right">%</div>
+              </div>
+            </div>
+            <div class="form-field">
+              <label for="property-tax">Property Tax</label>
+              <div class="input-overlay-left input-overlay-right property-tax">
+                <div class="input-overlay-text_left">$</div>
+                <input
+                  type="tel"
+                  id="property-tax"
+                  autocomplete="off"
+                  placeholder="10,000"
+                  optional
+                />
+                <div class="input-overlay-text_right">/ year</div>
+              </div>
+              <div class="input-overlay-right tax-percent">
+                <input
+                  type="tel"
+                  id="tax-percent"
+                  autocomplete="off"
+                  placeholder="5"
+                  optional
+                />
+                <div class="input-overlay-text_right">%</div>
+              </div>
+            </div>
+            <div class="form-field">
+              <label for="home-insurance">Homeowner's Insurance</label>
+              <div class="input-overlay-left home-insurance">
+                <div class="input-overlay-text_left">$</div>
+                <input
+                  type="tel"
+                  id="home-insurance"
+                  autocomplete="off"
+                  placeholder="5,000"
+                  optional
+                />
+                <div class="input-overlay-text_right">/ year</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="right-column"></div>
+      </section>
+    </main>
+
+    <footer></footer>
+  </body>
+</html>

@@ -1,0 +1,177 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number]{
+  -moz-appearance: none;
+}
+
+body {
+  display: block;
+}
+
+main {
+  background: linear-gradient(#42a8c8, #86b0c8, #d5e2e6, #fff);
+  display: inline-block;
+}
+
+/* Brand */
+
+.brand-wrapper {
+  padding: 10px;
+}
+
+/* End of Brand */
+/* Nav Section */
+
+.nav-wrapper ul {
+  list-style-type: none;
+  overflow: hidden;
+}
+
+.nav-wrapper li {
+  float: left;
+}
+
+.nav-wrapper a {
+  display: block;
+  padding: 5px 20px;
+}
+
+/* End of Nav Section */
+/* Hero Section */
+
+.hero .bg-img {
+  justify-content: center;
+  max-width: 100vw;
+  max-height: 300px;
+}
+
+.hero .title {
+  padding: 50px 0;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.hero-text,
+.hero-sub-text {
+  margin: 10px;
+}
+
+.hero-text a,
+.hero-sub-text a {
+  color: rgb(0, 187, 0);
+  text-decoration: none;
+}
+
+/* End of Hero Section */
+/* Calculator Content Section */
+
+.calc-content-section {
+  display: inline-block;
+  width: 95%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 50px;
+}
+
+.form{
+  justify-content: center;
+  max-width: 95%;
+}
+
+.form-field-label {
+  display: block;
+  padding-bottom: 3px;
+}
+
+.input-overlay-left {
+  position: relative;
+}
+
+.input-overlay-text_left {
+  position: absolute;
+  padding-left: 5px;
+}
+
+.input-overlay-right {
+  position: relative;
+}
+
+.input-overlay-text_right {
+  position: absolute;
+  right: 6px;
+}
+
+.input-overlay-text_right input {
+  padding-right: 22px;
+}
+
+.input-overlay-text_left input {
+  padding-right: 22px;
+}
+
+.input-overlay-text_left_right {
+  position: absolute;
+  left: 70px;
+}
+
+input,
+select {
+  height: 20px;
+  margin-bottom: 15px;
+}
+
+#home-price,
+#home-insurance {
+  width: 100%;
+}
+
+#down-payment,
+#property-tax {
+  width: 65%;
+  float: left;
+}
+
+#down-percent,
+#tax-percent {
+  width: 35%;
+  float: left;
+  padding-left: 10px;
+}
+
+#home-price,
+#down-payment,
+#property-tax {
+  padding-left: 20px;
+}
+
+#loan-length,
+#interest-rate,
+#home-insurance {
+  width: 100%;
+  float: left;
+  padding-left: 20px;
+}
+
+#interest-rate{
+  padding-left: 20px;
+}
+
+/* End of Calculator Content Section */
+
+@media only screen and (min-width: 1024px){
+  .calc-content-section{
+    width: 30%;
+  }
+}
