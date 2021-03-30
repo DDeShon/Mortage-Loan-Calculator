@@ -6,15 +6,15 @@
   box-sizing: border-box;
 }
 
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button{
+/* input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-input[type=number]{
+input[type="number"] {
   -moz-appearance: none;
-}
+} */
 
 body {
   display: block;
@@ -52,9 +52,9 @@ main {
 /* Hero Section */
 
 .hero .bg-img {
-  justify-content: center;
-  max-width: 100vw;
-  max-height: 300px;
+  background-position: center;
+  width: 100vw;
+  height: 300px;
 }
 
 .hero .title {
@@ -65,7 +65,7 @@ main {
 
 .hero-text,
 .hero-sub-text {
-  margin: 10px;
+  /* margin: 10px; */
 }
 
 .hero-text a,
@@ -85,7 +85,7 @@ main {
   margin-top: 50px;
 }
 
-.form{
+.form {
   justify-content: center;
   max-width: 95%;
 }
@@ -111,6 +111,11 @@ main {
 .input-overlay-text_right {
   position: absolute;
   right: 6px;
+}
+
+.input-overlay-text_right_left {
+  position: absolute;
+  right: 36%;
 }
 
 .input-overlay-text_right input {
@@ -151,7 +156,10 @@ select {
 }
 
 #home-price,
-#down-payment,
+#down-payment {
+  padding-left: 20px;
+}
+
 #property-tax {
   padding-left: 20px;
 }
@@ -164,14 +172,21 @@ select {
   padding-left: 20px;
 }
 
-#interest-rate{
+#interest-rate {
   padding-left: 20px;
 }
 
 /* End of Calculator Content Section */
 
-@media only screen and (min-width: 1024px){
-  .calc-content-section{
+@media only screen and (min-width: 768px) {
+  .hero .title {
+    padding: 0 0 50px 0;
+  }
+  .hero .bg-img {
+    height: 100vh;
+    background-size: ;
+  }
+  .calc-content-section {
     width: 30%;
   }
 }
