@@ -65,7 +65,7 @@ main {
 
 .hero-text,
 .hero-sub-text {
-  /* margin: 10px; */
+  margin: 10px;
 }
 
 .hero-text a,
@@ -131,10 +131,10 @@ main {
   left: 70px;
 }
 
-input,
-select {
+input {
   height: 20px;
   margin-bottom: 15px;
+  background-color: rgb(253, 241, 169);
 }
 
 #home-price,
@@ -183,8 +183,7 @@ select {
     padding: 0 0 50px 0;
   }
   .hero .bg-img {
-    height: 100vh;
-    background-size: ;
+    height: 50vh;
   }
   .calc-content-section {
     width: 30%;

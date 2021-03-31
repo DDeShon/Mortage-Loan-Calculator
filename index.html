@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="Styles/styles.css" />
     <title>Mortgage Loan Calculator</title>
+    <script src="./Script/mortgage-calculator.js"></script>
   </head>
   <body>
     <header>
@@ -51,6 +52,18 @@
           </p>
         </div>
       </section>
+      <!-- <section class="chart" id="chart">
+        <div class="chart-info" id="chart-info">
+          <ul>
+            <li>Loan Amount</li>
+            <li>Down Payment Amount</li>
+            <li>Down Payment %</li>
+            <li>Property Tax (Monthly)</li>
+            <li>Homeowner's Insurance (Monthly)</li>
+            <li></li>
+          </ul>
+        </div>
+      </section> -->
       <section class="calc-content-section">
         <div class="left-column">
           <div class="form">
@@ -68,7 +81,9 @@
               </div>
             </div>
             <div class="form-field">
-              <label for="down-payment">Down Payment</label>
+              <label for="down-payment"
+                >Down Payment (enter amount OR percent)</label
+              >
               <div class="input-overlay-left down-payment">
                 <div class="input-overlay-text_left">$</div>
                 <input
@@ -91,28 +106,36 @@
               </div>
             </div>
             <div class="form-field">
-              <label for="loan-length">Loan Length</label>
-              <select id="loan-length">
-                <option value="Fixed30Year">30-year fixed</option>
-                <option value="Fixed15Year">15-year fixed</option>
-                <option value="ARM5">5/1 ARM</option>
-              </select>
-            </div>
-            <div class="form-field">
-              <label for="interest-rate">Interest Rate</label>
-              <div class="input-overlay-right interest-rate">
+              <label for="home-insurance"
+                >Homeowner's Insurance (Optional)</label
+              >
+              <div class="input-overlay-left home-insurance">
+                <div class="input-overlay-text_left">$</div>
                 <input
-                  type="number"
-                  id="interest-rate"
+                  type="tel"
+                  id="home-insurance"
                   autocomplete="off"
-                  placeholder="3.106"
-                  required
+                  placeholder="5,000"
+                  optional
                 />
-                <div class="input-overlay-text_right">%</div>
+                <div class="input-overlay-text_right">/ year</div>
               </div>
             </div>
             <div class="form-field">
-              <label for="property-tax">Property Tax</label>
+              <label for="loan-length">Loan Length</label>
+              <div class="input-overlay-right loan-length">
+                <input
+                  type="number"
+                  id="loan-length"
+                  autocomplete="off"
+                  placeholder="30"
+                  required
+                />
+                <div class="input-overlay-text_right">years</div>
+              </div>
+            </div>
+            <div class="form-field">
+              <label for="property-tax">Property Tax (Optional)</label>
               <div class="input-overlay-left input-overlay-right property-tax">
                 <div class="input-overlay-text_left">$</div>
                 <input
@@ -136,7 +159,9 @@
               </div>
             </div>
             <div class="form-field">
-              <label for="home-insurance">Homeowner's Insurance</label>
+              <label for="home-insurance"
+                >Homeowner's Insurance (Optional)</label
+              >
               <div class="input-overlay-left home-insurance">
                 <div class="input-overlay-text_left">$</div>
                 <input
