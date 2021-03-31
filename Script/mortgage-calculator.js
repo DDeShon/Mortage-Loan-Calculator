@@ -1,6 +1,7 @@
 // calculate loan length in months
 function calcLength() {
   var loanLength = document.getElementById("loan-length").value;
+  console.log(loanLength);
   var loanMonths = loanLength / 12;
   return loanMonths;
 }

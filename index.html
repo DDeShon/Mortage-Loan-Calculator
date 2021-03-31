@@ -52,18 +52,7 @@
           </p>
         </div>
       </section>
-      <!-- <section class="chart" id="chart">
-        <div class="chart-info" id="chart-info">
-          <ul>
-            <li>Loan Amount</li>
-            <li>Down Payment Amount</li>
-            <li>Down Payment %</li>
-            <li>Property Tax (Monthly)</li>
-            <li>Homeowner's Insurance (Monthly)</li>
-            <li></li>
-          </ul>
-        </div>
-      </section> -->
+      
       <section class="calc-content-section">
         <div class="left-column">
           <div class="form">
@@ -106,22 +95,6 @@
               </div>
             </div>
             <div class="form-field">
-              <label for="home-insurance"
-                >Homeowner's Insurance (Optional)</label
-              >
-              <div class="input-overlay-left home-insurance">
-                <div class="input-overlay-text_left">$</div>
-                <input
-                  type="tel"
-                  id="home-insurance"
-                  autocomplete="off"
-                  placeholder="5,000"
-                  optional
-                />
-                <div class="input-overlay-text_right">/ year</div>
-              </div>
-            </div>
-            <div class="form-field">
               <label for="loan-length">Loan Length</label>
               <div class="input-overlay-right loan-length">
                 <input
@@ -135,28 +108,41 @@
               </div>
             </div>
             <div class="form-field">
-              <label for="property-tax">Property Tax (Optional)</label>
-              <div class="input-overlay-left input-overlay-right property-tax">
+              <label for="interest-rate">Interest Rate</label>
+              <div class="input-overlay-left interest-rate">
                 <div class="input-overlay-text_left">$</div>
                 <input
                   type="tel"
-                  id="property-tax"
+                  id="interest-rate"
                   autocomplete="off"
-                  placeholder="10,000"
+                  placeholder="5,000"
                   optional
                 />
-                <div class="input-overlay-text_right_left">/ year</div>
+                <div class="input-overlay-text_right">/ year</div>
               </div>
-              <div class="input-overlay-right tax-percent">
-                <input
-                  type="tel"
-                  id="tax-percent"
-                  autocomplete="off"
-                  placeholder="5"
-                  optional
-                />
-                <div class="input-overlay-text_right">%</div>
-              </div>
+              <div class="form-field">
+                <label for="property-tax">Property Tax (Optional)</label>
+                <div class="input-overlay-left input-overlay-right property-tax">
+                  <div class="input-overlay-text_left">$</div>
+                  <input
+                    type="tel"
+                    id="property-tax"
+                    autocomplete="off"
+                    placeholder="10,000"
+                    optional
+                  />
+                  <div class="input-overlay-text_right_left">/ year</div>
+                </div>
+                <div class="input-overlay-right tax-percent">
+                  <input
+                    type="tel"
+                    id="tax-percent"
+                    autocomplete="off"
+                    placeholder="5"
+                    optional
+                  />
+                  <div class="input-overlay-text_right">%</div>
+                </div>
             </div>
             <div class="form-field">
               <label for="home-insurance"
@@ -176,7 +162,18 @@
             </div>
           </div>
         </div>
-        <div class="right-column"></div>
+        <div class="right-column">
+          <div class="chart-info" id="chart-info">
+            <ul>
+              <li>Loan Amount</li>
+              <li>Down Payment Amount</li>
+              <li>Down Payment %</li>
+              <li>Property Tax (Monthly)</li>
+              <li>Homeowner's Insurance (Monthly)</li>
+              <li></li>
+            </ul>
+          </div>
+        </div>
       </section>
     </main>
 

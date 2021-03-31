@@ -6,7 +6,7 @@
   box-sizing: border-box;
 }
 
-/* input::-webkit-outer-spin-button,
+input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
@@ -14,7 +14,7 @@ input::-webkit-inner-spin-button {
 
 input[type="number"] {
   -moz-appearance: none;
-} */
+}
 
 body {
   display: block;
@@ -115,7 +115,7 @@ main {
 
 .input-overlay-text_right_left {
   position: absolute;
-  right: 36%;
+  right: 38%;
 }
 
 .input-overlay-text_right input {
