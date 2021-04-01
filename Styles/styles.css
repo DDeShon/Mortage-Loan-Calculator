@@ -53,7 +53,7 @@ main {
 
 .hero .bg-img {
   background-position: center;
-  width: 100vw;
+  width: 95vw;
   height: 300px;
 }
 
@@ -176,6 +176,12 @@ input {
   padding-left: 20px;
 }
 
+#calc-button {
+  background-color: blue;
+  color: white;
+  border-radius: 1em;
+  padding: 3px;
+}
 /* End of Calculator Content Section */
 
 @media only screen and (min-width: 768px) {
