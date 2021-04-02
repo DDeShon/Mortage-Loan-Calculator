@@ -22,7 +22,7 @@ body {
 
 main {
   background: linear-gradient(#42a8c8, #86b0c8, #d5e2e6, #fff);
-  display: inline-block;
+  /* display: inline-block; */
 }
 
 /* Brand */
@@ -52,10 +52,9 @@ main {
 /* Hero Section */
 
 .hero .bg-img {
-  margin-left: 7px;
   background-position: center;
-  width: 95vw;
-  height: 300px;
+  width: 97.7vw;
+  height: 27vh;
 }
 
 .hero .title {
@@ -88,7 +87,7 @@ main {
 
 .form {
   justify-content: center;
-  max-width: 95%;
+  /* max-width: 95%; */
 }
 
 .form-field-label {
@@ -190,7 +189,6 @@ input {
     padding: 0 0 50px 0;
   }
   .hero .bg-img {
-    margin-left: 15px;
     height: 50vh;
   }
   .calc-content-section {
