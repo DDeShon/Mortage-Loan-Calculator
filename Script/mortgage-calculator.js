@@ -6,7 +6,8 @@ function calculate() {
   const monthlyInterest = calcInterest(netPrice);
   const tax = calcTax();
   const insurance = calcInsurance();
-  calcPayments(netPrice, loanMonths, monthlyInterest, tax);
+  calcPayments(netPrice, loanMonths, monthlyInterest, tax, insurance);
+  postInfo(netPrice, down, tax, insurance);
 }
 
 // calculate net price
@@ -90,4 +91,15 @@ function calcPayments(netPrice, loanMonths, monthlyInterest, tax, insurance) {
     Math.round((monthlyPrice + monthlyInterest + tax + insurance) * 1e2) / 1e2;
   console.log("Monthly payment is " + monthlyPayments);
   return monthlyPayments;
+}
+
+function postInfo(netPrice, down, tax, insurance) {
+  document.getElementById("net-amount").innerHTML =
+    "Loan amount is : $" + netPrice;
+  document.getElementById("down-amount").innerHTML =
+    "Down payment amount is:  $" + down;
+  document.getElementById("prop-amount").innerHTML =
+    "Your monthly property tax is:  $" + tax;
+  document.getElementById("insurance-amount").innerHTML =
+    "Your monthly homeowner's insurance is:  $" + insurance;
 }
