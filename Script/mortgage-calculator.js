@@ -95,7 +95,7 @@ function calcPayments(netPrice, loanMonths, monthlyInterest, tax, insurance) {
 
 function postInfo(netPrice, down, tax, insurance) {
   document.getElementById("net-amount").innerHTML =
-    "Loan amount is : $" + netPrice;
+    "Loan amount is:  $" + netPrice;
   document.getElementById("down-amount").innerHTML =
     "Down payment amount is:  $" + down;
   document.getElementById("prop-amount").innerHTML =
