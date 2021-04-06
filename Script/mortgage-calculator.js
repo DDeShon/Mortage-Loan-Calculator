@@ -6,8 +6,14 @@ function calculate() {
   const monthlyInterest = calcInterest(netPrice);
   const tax = calcTax();
   const insurance = calcInsurance();
-  calcPayments(netPrice, loanMonths, monthlyInterest, tax, insurance);
-  postInfo(netPrice, down, tax, insurance);
+  const monthlyPayments = calcPayments(
+    netPrice,
+    loanMonths,
+    monthlyInterest,
+    tax,
+    insurance
+  );
+  postInfo(netPrice, down, tax, insurance, monthlyPayments);
 }
 
 // calculate net price
@@ -93,7 +99,7 @@ function calcPayments(netPrice, loanMonths, monthlyInterest, tax, insurance) {
   return monthlyPayments;
 }
 
-function postInfo(netPrice, down, tax, insurance) {
+function postInfo(netPrice, down, tax, insurance, monthlyPayments) {
   document.getElementById("net-amount").innerHTML =
     "Loan amount is:  $" + netPrice;
   document.getElementById("down-amount").innerHTML =
@@ -102,4 +108,6 @@ function postInfo(netPrice, down, tax, insurance) {
     "Your monthly property tax is:  $" + tax;
   document.getElementById("insurance-amount").innerHTML =
     "Your monthly homeowner's insurance is:  $" + insurance;
+  document.getElementById("monthly-payment").innerHTML =
+    "Your monthly payment would be:  $" + monthlyPayments;
 }
