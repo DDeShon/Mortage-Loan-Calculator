@@ -24,30 +24,6 @@ main {
   background: linear-gradient(#42a8c8, #86b0c8, #d5e2e6, #fff);
 }
 
-/* Brand */
-
-.brand-wrapper {
-  padding: 10px;
-}
-
-/* End of Brand */
-/* Nav Section */
-
-.nav-wrapper ul {
-  list-style-type: none;
-  overflow: hidden;
-}
-
-.nav-wrapper li {
-  float: left;
-}
-
-.nav-wrapper a {
-  display: block;
-  padding: 5px 20px;
-}
-
-/* End of Nav Section */
 /* Hero Section */
 
 .hero .bg-img {
@@ -67,22 +43,12 @@ main {
   margin: 10px;
 }
 
-.hero-text a,
-.hero-sub-text a {
-  color: rgb(0, 187, 0);
-  text-decoration: none;
-}
-
 /* End of Hero Section */
 /* Calculator Content Section */
+
 .calc-content-section .right-column {
   margin-bottom: 50px;
 }
-
-/* .right-column p {
-  display: flex;
-  justify-content: space-between;
-} */
 
 .calc-content-section {
   display: inline-block;
@@ -94,7 +60,6 @@ main {
 
 .form {
   justify-content: center;
-  /* max-width: 95%; */
 }
 
 .form-field-label {
@@ -189,7 +154,10 @@ input {
   border-radius: 1em;
   padding: 3px;
   margin-bottom: 20px;
+  outline: none;
+  cursor: pointer;
 }
+
 /* End of Calculator Content Section */
 
 @media only screen and (min-width: 768px) {

@@ -5,29 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="Styles/styles.css" />
+    <link rel="shortcut icon" href="/Images/Mortgage_Logo.png" type="image/x-icon">
     <script defer src="./Script/mortgage-calculator.js"></script>
     <title>Mortgage Loan Calculator</title>
     
   </head>
   <body>
-    <header>
-      <div class="brand-wrapper">
-        <div class="brand-logo">Mortgage calculator logo</div>
-      </div>
-      <hr />
-      <div class="container">
-        <nav class="nav-wrapper">
-          <ul>
-            <li><a href="#">Link</a></li>
-            <li><a href="#">Link 2</a></li>
-            <li><a href="#">Link 3</a></li>
-            <li><a href="#">Link 4</a></li>
-          </ul>
-        </nav>
-        <hr />
-      </div>
-    </header>
-
     <main>
       <section class="hero">
         <img src="/Images/Mortgage_BG.svg" class="bg-img" alt="" />
@@ -36,17 +19,17 @@
           <p class="hero-text">
             Use this Mortgage Calculator to estimate your monthly mortgage
             payments. You can input a different home price,
-            <a href="#">down payment</a>, loan length and
-            <a href="#">interest rate</a> to see how your monthly payments
+            down payment, loan length and
+            interest rate to see how your monthly payments
             change.
           </p>
           <p class="hero-sub-text">
             The monthly payment estimates are broken down by
-            <a href="#">principal</a>, interest, property taxes and
-            <a href="#">homeowner's insurance</a>. We take our calculator a step
-            further by factoring in your <a href="#">credit score range</a>, ZIP
+            principal, interest, property taxes and
+            homeowner's insurance. We take our calculator a step
+            further by factoring in your credit score range, ZIP
             code and HOA fees to give you a more precise payment estimate.
-            You’ll also go into the <a href="#">homebuying process</a> with a
+            You’ll also go into the homebuying process with a
             more accurate picture of how to calculate mortgage payments and
             purchase with confidence. After you run some estimates, read on for
             more education and homebuying tips.
@@ -59,7 +42,7 @@
             
             <p id="net-amount"></p>
             <p id="down-amount"></p>
-            <p id="prop-amount"></p>
+            <p id="prop-tax-amount"></p>
             <p id="insurance-amount"></p>
             <p id="monthly-payment"></p>
             
@@ -72,7 +55,7 @@
               <div class="input-overlay-left home-price">
                 <div class="input-overlay-text_left">$</div>
                 <input
-                  type="tel"
+                  type="number"
                   id="home-price"
                   autocomplete="off"
                   placeholder="100,000"
@@ -87,7 +70,7 @@
               <div class="input-overlay-left down-payment">
                 <div class="input-overlay-text_left">$</div>
                 <input
-                  type="tel"
+                  type="number"
                   id="down-payment"
                   autocomplete="off"
                   placeholder="10,000"
@@ -96,7 +79,7 @@
               </div>
               <div class="input-overlay-right down-percent">
                 <input
-                  type="tel"
+                  type="number"
                   id="down-percent"
                   autocomplete="off"
                   placeholder="10"
@@ -122,7 +105,7 @@
               <label for="interest-rate">Interest Rate</label>
               <div class="input-overlay-left interest-rate">
                 <input
-                  type="tel"
+                  type="number"
                   id="interest-rate"
                   autocomplete="off"
                   placeholder="3.1"
@@ -135,7 +118,7 @@
                 <div class="input-overlay-left input-overlay-right property-tax">
                   <div class="input-overlay-text_left">$</div>
                   <input
-                    type="tel"
+                    type="number"
                     id="property-tax"
                     autocomplete="off"
                     placeholder="4,000"
@@ -145,7 +128,7 @@
                 </div>
                 <div class="input-overlay-right tax-percent">
                   <input
-                    type="tel"
+                    type="number"
                     id="tax-percent"
                     autocomplete="off"
                     placeholder="3"
@@ -161,7 +144,7 @@
               <div class="input-overlay-left home-insurance">
                 <div class="input-overlay-text_left">$</div>
                 <input
-                  type="tel"
+                  type="number"
                   id="home-insurance"
                   autocomplete="off"
                   placeholder="2,000"

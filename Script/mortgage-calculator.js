@@ -33,7 +33,7 @@ function calcDown() {
     downDec = downPercent * 0.01;
     down = document.getElementById("home-price").value * downDec;
   } else if (downPercent == "") {
-    down = downPayment;
+    down = parseFloat(downPayment);
   } else {
     down = null;
     alert("Please enter either Down Payment amount OR percent.");
@@ -93,19 +93,40 @@ function calcInsurance() {
 // formula:  price - down + interest + tax (opt) + insurance (opt) / length
 function calcPayments(netPrice, loanMonths, monthlyInterest, tax, insurance) {
   var monthlyPrice = netPrice / loanMonths;
-  var monthlyPayments =
-    Math.round((monthlyPrice + monthlyInterest + tax + insurance) * 1e2) / 1e2;
+  var monthlyPayments = monthlyPrice + monthlyInterest + tax + insurance;
   console.log("Monthly payment is " + monthlyPayments);
   return monthlyPayments;
 }
 
 function postInfo(netPrice, down, tax, insurance, monthlyPayments) {
   document.getElementById("net-amount").innerHTML =
-    "Loan amount:  $" + netPrice;
-  document.getElementById("down-amount").innerHTML = "Down payment:  $" + down;
-  document.getElementById("prop-amount").innerHTML = "Property tax:  $" + tax;
+    "Loan amount:  " +
+    netPrice.toLocaleString("en-US", {
+      style: "currency",
+      currency: "USD",
+    });
+  document.getElementById("down-amount").innerHTML =
+    "Down payment:  " +
+    down.toLocaleString("en-US", {
+      style: "currency",
+      currency: "USD",
+    });
+  document.getElementById("prop-tax-amount").innerHTML =
+    "Property tax (monthly):  " +
+    tax.toLocaleString("en-US", {
+      style: "currency",
+      currency: "USD",
+    });
   document.getElementById("insurance-amount").innerHTML =
-    "Homeowner's insurance:  $" + insurance;
+    "Homeowner's insurance (monthly):  " +
+    insurance.toLocaleString("en-US", {
+      style: "currency",
+      currency: "USD",
+    });
   document.getElementById("monthly-payment").innerHTML =
-    "Your monthly payment would be:  $" + monthlyPayments;
+    "Your monthly payment would be:  " +
+    monthlyPayments.toLocaleString("en-US", {
+      style: "currency",
+      currency: "USD",
+    });
 }
