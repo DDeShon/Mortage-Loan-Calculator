@@ -101,13 +101,11 @@ function calcPayments(netPrice, loanMonths, monthlyInterest, tax, insurance) {
 
 function postInfo(netPrice, down, tax, insurance, monthlyPayments) {
   document.getElementById("net-amount").innerHTML =
-    "Loan amount is:  $" + netPrice;
-  document.getElementById("down-amount").innerHTML =
-    "Down payment amount is:  $" + down;
-  document.getElementById("prop-amount").innerHTML =
-    "Your monthly property tax is:  $" + tax;
+    "Loan amount:  $" + netPrice;
+  document.getElementById("down-amount").innerHTML = "Down payment:  $" + down;
+  document.getElementById("prop-amount").innerHTML = "Property tax:  $" + tax;
   document.getElementById("insurance-amount").innerHTML =
-    "Your monthly homeowner's insurance is:  $" + insurance;
+    "Homeowner's insurance:  $" + insurance;
   document.getElementById("monthly-payment").innerHTML =
     "Your monthly payment would be:  $" + monthlyPayments;
 }

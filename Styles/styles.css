@@ -22,7 +22,6 @@ body {
 
 main {
   background: linear-gradient(#42a8c8, #86b0c8, #d5e2e6, #fff);
-  /* display: inline-block; */
 }
 
 /* Brand */
@@ -76,6 +75,14 @@ main {
 
 /* End of Hero Section */
 /* Calculator Content Section */
+.calc-content-section .right-column {
+  margin-bottom: 50px;
+}
+
+/* .right-column p {
+  display: flex;
+  justify-content: space-between;
+} */
 
 .calc-content-section {
   display: inline-block;
@@ -193,6 +200,16 @@ input {
     height: 50vh;
   }
   .calc-content-section {
-    width: 30%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  .left-column {
+    width: 40%;
+  }
+  .right-column {
+    width: 55%;
+    line-height: 2em;
+    font-size: 1.5em;
   }
 }
